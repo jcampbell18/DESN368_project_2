@@ -1,25 +1,49 @@
 /***** HTML *****/
 html {
-    max-width: 100%;
+    max-width: 88%;
+    margin: 0 auto;
+    padding: 0;
 }
 
 body {
-    background-color: lightgrey;
-    background-image: url("common/images/fabric_plaid.png");
-    background-repeat: no-repeat;
+    background-image: url("common/images/textures/fabric_plaid.png");
+    background-repeat: repeat;
+}
+
+container {
+    width: 100%;
+    margin: 0 auto;
 }
 
 /****** NAV ******/
 nav {
-    width: 98%;
+    border: 1px solid red; /* REMOVE!!! */
+    width: 100%;
+    background-color: inherit;
+    color: #333;
+    display: flex;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    justify-content: space-between;
+    display: inline;
 }
 
 nav section#left-column {
     width: 15%;
+    align-items: center;
+    display: flex;
 }
 
 nav section#left-column img {
-    width: 100%;
+    width: 50%;
+    align-items: center;
+    padding-left: 12px;
 }
 
 nav section#mid-column {
@@ -30,29 +54,40 @@ nav section#right-column {
     width: 15%
 }
 
+nav section#right-column img {
+    width: 12%;
+    border-radius: 5px;
+}
+
 
 /****** HEADER ******/
 header {
-    width: 98%;
+    border: 1px solid orange; /* REMOVE!!! */
+    width: 100%;
     background-color: white;
     /*background-image: url("images/");
     background-repeat: no-repeat;*/
 }
 
-header div#arrows {}
+header div#arrows {
+
+}
 
 header div#horizontal-bar {}
 
 
 /****** MAIN ******/
 main {
+    border: 1px solid purple; /* REMOVE!!! */
     width: 98%;
+    height: 100px; /* REMOVE THIS!!! */
 }
 
 
 /***** FOOTER *****/
 footer {
-    width: 98%;
+    border: 1px solid red; /* REMOVE!!! */
+    width: 100%;
     background-image: url("common/images/textures/az_subtle.png");
     background-repeat: no-repeat;
     color: white;
@@ -66,7 +101,7 @@ footer section {
 
 footer h3 {
     background-color: inherit;
-    color: darkgrey;
+    color: #333;
     text-transform: capitalize;
 }
 
