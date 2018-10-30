@@ -1,14 +1,92 @@
+/***** HTML *****/
+html {
+    max-width: 100%;
+}
+
+body {
+    background-color: lightgrey;
+    background-image: url("common/images/fabric_plaid.png");
+    background-repeat: no-repeat;
+}
+
 /****** NAV ******/
-nav {}
+nav {
+    width: 98%;
+}
+
+nav section#left-column {
+    width: 15%;
+}
+
+nav section#left-column img {
+    width: 100%;
+}
+
+nav section#mid-column {
+    width: 70%;
+}
+
+nav section#right-column {
+    width: 15%
+}
 
 
 /****** HEADER ******/
-header {}
+header {
+    width: 98%;
+    background-color: white;
+    /*background-image: url("images/");
+    background-repeat: no-repeat;*/
+}
+
+header div#arrows {}
+
+header div#horizontal-bar {}
 
 
 /****** MAIN ******/
-main {}
+main {
+    width: 98%;
+}
 
 
 /***** FOOTER *****/
-footer {}
+footer {
+    width: 98%;
+    background-image: url("common/images/textures/az_subtle.png");
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+}
+
+footer section {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+footer h3 {
+    background-color: inherit;
+    color: darkgrey;
+    text-transform: capitalize;
+}
+
+footer section#horizontal-bar {
+    background-color: darkgrey;
+    color: white;
+}
+
+footer section#left-vertical-column {
+
+}
+
+footer section#mid-vertical-column {
+
+}
+
+footer section#right-vertical-column {
+    display: flex;
+}
+
+
+/***** TABLET *****/
+/*@media () {}*/
