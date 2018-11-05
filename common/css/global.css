@@ -1,14 +1,21 @@
+/***** FONTS *****/
+
+@font-face {
+    font-family: Museo500WebFont;
+    src: url("../images/fonts/museo/museo-500-webfont.ttf");
+}
+
+
 /***** HTML *****/
 html {
     max-width: 88%;
     margin: 0 auto;
     padding: 0;
+    font-family: Museo500WebFont, Arial, sans-serif;
 }
 
 body {
-    background-color: grey;
-    background-image: url("../images/textures/fabric_plaid.png");
-    background-repeat: repeat;
+    background: grey url("../images/textures/fabric_plaid.png") repeat;
 }
 
 #container {
@@ -22,15 +29,7 @@ a, a:visited, a:hover, a:link {
     background-color: inherit;
 }
 
-@font-face {
-    font-family: BlanchCaps;
-    src: url("../images/fonts/blanch/BLANCH_CAPS.ttf");
-}
 
-@font-face {
-    font-family: Museo500WebFont;
-    src: url("../images/fonts/museo/museo-500-webfont.ttf")
-}
 
 /****** NAV ******/
 nav {
@@ -40,80 +39,86 @@ nav {
     color: #333;
     display: flex;
     text-transform: uppercase;
-    font-family: Blanch;
+    font-size: 0.6em;
 }
 
-nav section#left-column {
+nav div#left-column {
     width: 15%;
     align-items: center;
     display: flex;
     flex-flow: row nowrap;
-    align-items: center;
 }
 
-nav section#left-column img {
-    width: 50%;
+nav div#left-column img {
+    width: 60%;
     padding-left: 12px;
 }
 
-nav section#mid-column {
+nav div#mid-column {
     width: 60%;
     display: flex;
     flex-flow: row nowrap;
 }
 
-nav section#mid-column ul {
+nav div#mid-column ul {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-nav section#mid-column ul li {
+nav div#mid-column ul li {
     padding: 0 14px;
 }
 
-nav section#right-column {
+nav div#right-column {
     width: 25%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
 }
 
-nav section#right-column img {
-    width: 2.5vw;
-    height: 2.5vh;
+nav div#right-column #social-media {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: space-between;
+}
+
+nav div#right-column img {
+    width: 10%;
+    height: 10%;
     border-radius: 5px;
 }
 
-nav section#right-column ul {
+nav div#right-column ul {
     display: flex;
     justify-content: flex-end;
     list-style: none;
+    align-content: space-between;
 }
 
-nav section#right-column ul li {
-    padding: 0 14px;
+nav div#right-column ul li {
+    padding: 0 0;
 }
 
 /****** HEADER ******/
 header {
     width: 98%;
+    height: 250px;
     margin: 0 auto;
-    background-color: grey;
-    background-image: url("../../images/EWU_campus.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 30vh;
+    background: white url("../../images/EWU_campus.jpg") center no-repeat;
+    background-size: 98%;
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     justify-content: center;
-    font-family: Museo500WebFont;
-    font-size: 1em;
-    color: rgba(255, 255, 255, 0.6);
 }
 
 header div#arrows {
-    height: 30vh;
+    height: 60%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
 }
 
@@ -121,19 +126,26 @@ header div#arrows img {
     width: 3%;
 }
 
-header div#horizontal-bar {
-    height: 3vh;
-    background-color: rgba(51, 51, 51, 0.6);
-    opacity: 60%;
+header div#header-lower {
+    width: 98%;
+    height: 40%;
+    margin: 0 auto;
     display: flex;
-    justify-content: flex-end;
-    align-items: stretch;
-    display: flex;
-    color: white;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-header div#horizontal-bar span {
-    padding-right: 28px;
+header div#header-horizontal-bar {
+    width: 100%;
+    height: 5%;
+    padding: 8px 24px 8px 0;
+    background-color: rgba(102, 102, 102, 0.6);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.8em;
 }
 
 
@@ -146,7 +158,6 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: Museo500WebFont;
 }
 
 main p {
@@ -154,14 +165,26 @@ main p {
     color: #333;
 }
 
-main#image-gallery-large {
+#image-gallery-large {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-flow: row wrap;
+    align-content: flex-end;
 }
 
-main#image-gallery-large img {
-    width: 25%;
+main div img.large-thumbnails {
+    width: 23%;
+    margin: 8px 0;
+}
+
+#view-more {
+    padding: 8px 32px 8px 32px;
+    background-color: #ADADAD;
+    color: white;
+    margin-top: 14px;
+    border: 0;
+    border-radius: 5px;
 }
 
 
@@ -169,8 +192,7 @@ main#image-gallery-large img {
 footer {
     width: 98%;
     margin: 0 auto;
-    background-image: url("common/images/textures/az_subtle.png");
-    background-repeat: no-repeat;
+    background: url("../images/textures/az_subtle.png") repeat;
     color: white;
     display: flex;
     flex-direction: column;
@@ -179,50 +201,110 @@ footer {
 footer h3 {
     background-color: inherit;
     color: #333;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    font-size: 0.8em;
 }
 
-footer section#horizontal-bar {
+footer h4 {
+    color: #666;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+
+footer div#horizontal-bar {
     width: 100%;
-    background-color: #333;
+    height: 5%;
+    background-image: linear-gradient(to bottom, rgba(102, 102, 102, 1) 90%, rgba(102, 102, 102, 0));
     color: white;
-    padding: 14px 0;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    font-size: Museo500WebFont;
-    font-size: 1em;
+    font-size: 0.7em;
 }
 
-footer section#horizontal-bar img {
-    width: 2.5vw;
-    height: 2.5vh;
-}    
+footer div#horizontal-bar img {
+    width: 2%;
+}
 
-footer section#horizontal-area {
+footer div#horizontal-bar p {
+    padding: 8px 0 8px 0;
+}
+
+footer div#horizontal-area {
     width: 100%;
-    border: 1px dashed orange;
-    background-image: url("../images/textures/az_subtle.png") repeat;
+    background-color: rgba(102, 102, 102, 0.3);
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
-footer section#horizontal-area #left-vertical-column {
-    width: 34%;
-    border: 1px solid red;
+footer div#horizontal-area div#left-vertical-column {
+    width: 40%;
 }
 
-footer section#horizontal-area #mid-vertical-column {
-    width: 33%;
-    border: 1px solid red;
+footer div#horizontal-area div#left-vertical-column div#nav-mini {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-right: 8px;
 }
 
-footer section#horizontal-area #right-vertical-column {
-    width: 20%;
-    border: 1px solid red;
-    font-family: BlanchCaps;
+footer div#horizontal-area div#left-vertical-column img {
+    width: 15%;
+    margin: 8px 0 0 8px;
+}
+
+footer div#horizontal-area div#left-vertical-column ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0 0 0 8px;
+    border: 0;
+}
+
+footer div#horizontal-area div#left-vertical-column ul li {
+    padding: 0 6px;
+    font-size: 0.7em;
+    color: #666;
+}
+
+footer div#horizontal-area div#left-vertical-column #search-area-container {
+    margin-left: 8px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+footer label {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 0.7em;
+}
+
+footer input {
+    background: url("../images/icons/search.png") left center no-repeat;
+    background-size: 12%;
+    padding: 4px 8px 4px 26px;
+}
+
+footer div#horizontal-area section#mid-vertical-column {
+    width: 30%;
+    padding: 0 4px;
+    max-width: 52ch;
+}
+
+footer div#horizontal-area section#mid-vertical-column p {
+    font-size: 0.7em;
+    max-width: 52ch;
+}
+
+footer div#horizontal-area section#right-vertical-column {
+    width: 30%;
+    margin-right: 8px;
     text-transform: uppercase;
     color: #333;
 }
@@ -234,8 +316,9 @@ footer section#horizontal-area #right-vertical-column {
 }
 
 #gallery-min img {
-    width: 4vw;
-    height: 4vh;
+    width: 20%;
+    height: 20%;
+    margin: 4px 2px 4px 2px;
 }
 
 
