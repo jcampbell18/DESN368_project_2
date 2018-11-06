@@ -51,6 +51,7 @@ nav div#left-column {
 
 nav div#left-column img {
     width: 60%;
+    height: auto;
     padding-left: 12px;
 }
 
@@ -88,7 +89,7 @@ nav div#right-column #social-media {
 
 nav div#right-column img {
     width: 10%;
-    height: 10%;
+    height: auto;
     border-radius: 5px;
 }
 
@@ -141,6 +142,7 @@ footer div#horizontal-bar {
 
 footer div#horizontal-bar img {
     width: 2%;
+    height: auto;
 }
 
 footer div#horizontal-bar p {
@@ -170,6 +172,7 @@ footer div#horizontal-area div#left-vertical-column div#nav-mini {
 
 footer div#horizontal-area div#left-vertical-column img {
     width: 15%;
+    height: auto;
     margin: 8px 0 0 8px;
 }
 
@@ -233,7 +236,7 @@ footer div#horizontal-area section#right-vertical-column {
 
 #gallery-min img {
     width: 20%;
-    height: 20%;
+    height: auto;
     margin: 4px 2px 4px 2px;
 }
 

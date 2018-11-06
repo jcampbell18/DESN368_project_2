@@ -36,6 +36,7 @@ header div#header-left-column-lower {
 
 header div#header-left-column-lower img {
     width: 30%;
+    height: auto;
     padding: 8px;
 }
 
@@ -48,6 +49,7 @@ header div#header-left_column div#arrows {
 
 header div#header-left_column div#arrows img {
     width: 3%;
+    height: auto;
 }
 
 header div#header-left_column div#header-lower {
@@ -96,6 +98,7 @@ header div#header-right-column div#student-info {
 
 header div#header-right-column div#student-info img {
     width: 25%;
+    height: auto;
     padding: 4px;
 }
 
@@ -128,7 +131,7 @@ header div#header-right-column div#student-info div#student-info-details div#stu
 
 header div#header-right-column div#student-info div#student-info-details div#student-social-media img {
     width: 8%;
-    height: 8%;
+    height: auto;
 }
 
 header div#header-right-column section#project-details {
@@ -179,5 +182,6 @@ main h1 {
 
 main div img.large-thumbnails {
     width: 23%;
+    height: auto;
     margin: 8px 0;
 }

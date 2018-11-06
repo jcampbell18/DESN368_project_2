@@ -19,6 +19,7 @@ header div#arrows {
 
 header div#arrows img {
     width: 3%;
+    height: auto;
 }
 
 header div#header-lower {
@@ -70,6 +71,7 @@ main p {
 
 main div img.large-thumbnails {
     width: 23%;
+    height: auto;
     margin: 8px 0;
 }
 
