@@ -75,7 +75,8 @@ main div img.large-thumbnails {
 
 #view-more {
     padding: 8px 32px;
-    background: linear-gradient(0, rgba(102,102,102,0.5), rgba(102,102,102,0.5)), url(../images/textures/az_subtle.png) repeat;
+    background: #ADADAD url("../images/textures/az_subtle.png") repeat;
+    background-blend-mode: multiply;
     color: white;
     margin-top: 14px;
     border: 0;
