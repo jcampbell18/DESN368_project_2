@@ -74,8 +74,8 @@ main div img.large-thumbnails {
 }
 
 #view-more {
-    padding: 8px 32px 8px 32px;
-    background-color: #ADADAD;
+    padding: 8px 32px;
+    background: linear-gradient(0, rgba(102,102,102,0.5), rgba(102,102,102,0.5)), url(../images/textures/az_subtle.png) repeat;
     color: white;
     margin-top: 14px;
     border: 0;
