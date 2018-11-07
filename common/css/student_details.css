@@ -90,6 +90,7 @@ header div#header-right-column div#student-info {
     width: 98%;
     height: 25%;
     margin: 0 auto;
+    overflow: auto;
     background-color: white;
     display: flex;
     flex-flow: row nowrap;
@@ -140,6 +141,7 @@ header div#header-right-column section#project-details {
     width: 98%;
     height: 78%;
     margin: 0 auto;
+    overflow: auto;
     background-color: white;
     color: #666;
     font-size: 1em;
