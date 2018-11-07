@@ -205,9 +205,12 @@ footer label {
 }
 
 footer input {
-    background: url("../images/icons/search.png") left center no-repeat;
+    background: white url("../images/icons/search.png") left center no-repeat;
     background-size: 12%;
+    background-blend-mode: multiply;
     padding: 4px 8px 4px 26px;
+    border: 0;
+    border-radius: 5px;
 }
 
 footer div#horizontal-area section#mid-vertical-column {
@@ -236,8 +239,8 @@ footer div#horizontal-area section#right-vertical-column {
 
 #gallery-min img {
     width: 20%;
-    height: auto;
-    margin: 4px 2px 4px 2px;
+    align-self: center;
+    padding: 4px 2px 4px 2px;
 }
 
 
