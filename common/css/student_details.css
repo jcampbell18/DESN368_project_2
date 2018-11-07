@@ -113,6 +113,7 @@ header div#header-right-column div#student-info div#student-info-details {
 
 header div#header-right-column div#student-info div#student-info-details div#student-name {
     font-size: 0.8em;
+    padding-bottom: 4px;
 }
 
 header div#header-right-column div#student-info div#student-info-details div#student-website {
