@@ -236,6 +236,7 @@ footer div#horizontal-area section#right-vertical-column {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    padding-bottom: 8px;
 }
 
 #gallery-min img {
