@@ -194,10 +194,6 @@ main div img.large-thumbnails {
 /***** MEDIA *****/
 @media (max-width: 800px) {
 
-    body {
-        font-size: 0.8em;
-    }
-
     header div#header-left_column {
         width: 50%;
     }
@@ -215,19 +211,6 @@ main div img.large-thumbnails {
         height: auto;
         margin: 8px 0;
     }
-
-    footer div#horizontal-area div#left-vertical-column {
-        width: 50%;
-    }
-
-    footer div#horizontal-area div#mid-vertical-column {
-        width: 50%;
-    }
-
-    footer div#horizontal-area section#right-vertical-column {
-        display: none;
-    }
-
 }
 
 /***** MEDIA *****/

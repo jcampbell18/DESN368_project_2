@@ -130,11 +130,13 @@ main div img.large-thumbnails {
 }
 
 /***** MEDIA *****/
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 
-    body {
-        font-size: 0.6em;
-    }
+
+
+}
+
+@media (max-width: 600px) {
 
     main h1 {
         font-size: 2em;
