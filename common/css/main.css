@@ -135,24 +135,15 @@ main div img.large-thumbnails {
     body {
         font-size: 0.6em;
     }
-/*
-    header div#header-left_column {
-        width: 50%;
-    }
-
-    header div#header-right-column {
-        width: 50%;
-        font-size: 1.4em;
-    }
 
     main h1 {
         font-size: 2em;
     }
 
     main div img.large-thumbnails {
-        width: 40%;
+        width: 30%;
         height: auto;
         margin: 8px 0;
     }
-*/
+
 }
