@@ -132,7 +132,11 @@ main div img.large-thumbnails {
 /***** MEDIA *****/
 @media (max-width: 800px) {
 
-
+    main div img.large-thumbnails {
+        width: 30%;
+        height: auto;
+        margin: 8px 0;
+    }
 
 }
 
@@ -143,7 +147,7 @@ main div img.large-thumbnails {
     }
 
     main div img.large-thumbnails {
-        width: 30%;
+        width: 40%;
         height: auto;
         margin: 8px 0;
     }
