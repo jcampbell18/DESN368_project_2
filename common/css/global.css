@@ -246,5 +246,33 @@ footer div#horizontal-area section#right-vertical-column {
 }
 
 
-/***** TABLET *****/
-/*@media () {}*/
+/***** MEDIA *****/
+@media (max-width: 600px) and (min-width: 400px) {
+
+    html {
+        min-width: 400px;
+    }
+
+    body {
+        font-size: 0.6em;
+    }
+
+    footer input {
+        background: white url("../images/icons/search.png") left center no-repeat;
+        background-size: 5%;
+        background-blend-mode: multiply;
+        padding: 4px 8px 4px 26px;
+        border: 0;
+        border-radius: 5px;
+        font-size: 0.8em;
+    }
+
+    footer div#horizontal-area div#left-vertical-column {
+        width: 50%;
+    }
+
+    footer div#horizontal-area div#mid-vertical-column {
+        width: 50%;
+    }
+
+}

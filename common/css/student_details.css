@@ -90,7 +90,7 @@ header div#header-right-column div#student-info {
     width: 98%;
     height: 25%;
     margin: 0 auto;
-    overflow: auto;
+    overflow: hidden;
     background-color: white;
     display: flex;
     flex-flow: row nowrap;
@@ -141,7 +141,7 @@ header div#header-right-column section#project-details {
     width: 98%;
     height: 78%;
     margin: 0 auto;
-    overflow: auto;
+    overflow: hidden;
     background-color: white;
     color: #666;
     font-size: 1em;
@@ -160,7 +160,7 @@ header div#header-right-column section#project-details p {
 }
 
 
-    /****** MAIN ******/
+/****** MAIN ******/
 main {
     width: 98%;
     padding: 28px 0;
@@ -188,4 +188,68 @@ main div img.large-thumbnails {
     width: 23%;
     height: auto;
     margin: 8px 0;
+}
+
+
+/***** MEDIA *****/
+@media (max-width: 800px) {
+
+    body {
+        font-size: 0.8em;
+    }
+
+    header div#header-left_column {
+        width: 50%;
+    }
+
+    header div#header-right-column {
+        width: 50%;
+    }
+
+    main h1 {
+        font-size: 1em;
+    }
+
+    main div img.large-thumbnails {
+        width: 30%;
+        height: auto;
+        margin: 8px 0;
+    }
+
+    footer div#horizontal-area div#left-vertical-column {
+        width: 50%;
+    }
+
+    footer div#horizontal-area div#mid-vertical-column {
+        width: 50%;
+    }
+
+    footer div#horizontal-area section#right-vertical-column {
+        display: none;
+    }
+
+}
+
+/***** MEDIA *****/
+@media (max-width: 600px) and (min-width: 400px) {
+
+    header div#header-left_column {
+        width: 50%;
+    }
+
+    header div#header-right-column {
+        width: 50%;
+        font-size: 1.4em;
+    }
+
+    main h1 {
+        font-size: 2em;
+    }
+
+    main div img.large-thumbnails {
+        width: 40%;
+        height: auto;
+        margin: 8px 0;
+    }
+
 }

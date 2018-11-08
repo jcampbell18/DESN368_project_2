@@ -88,3 +88,71 @@ main div img.large-thumbnails {
 #view-more:hover {
     background-color: #666;
 }
+
+
+/***** MEDIA *****/
+@media (max-width: 800px) {
+
+    body {
+        font-size: 0.8em;
+    }
+
+    header div#header-left_column {
+        width: 50%;
+    }
+
+    header div#header-right-column {
+        width: 50%;
+    }
+
+    main h1 {
+        font-size: 1em;
+    }
+
+    main div img.large-thumbnails {
+        width: 30%;
+        height: auto;
+        margin: 8px 0;
+    }
+
+    footer div#horizontal-area div#left-vertical-column {
+        width: 50%;
+    }
+
+    footer div#horizontal-area div#mid-vertical-column {
+        width: 50%;
+    }
+
+    footer div#horizontal-area section#right-vertical-column {
+        display: none;
+    }
+
+}
+
+/***** MEDIA *****/
+@media (max-width: 600px) and (min-width: 400px) {
+
+    body {
+        font-size: 0.6em;
+    }
+/*
+    header div#header-left_column {
+        width: 50%;
+    }
+
+    header div#header-right-column {
+        width: 50%;
+        font-size: 1.4em;
+    }
+
+    main h1 {
+        font-size: 2em;
+    }
+
+    main div img.large-thumbnails {
+        width: 40%;
+        height: auto;
+        margin: 8px 0;
+    }
+*/
+}
