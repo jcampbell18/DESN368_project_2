@@ -247,11 +247,7 @@ footer div#horizontal-area section#right-vertical-column {
 
 
 /***** MEDIA *****/
-@media (max-width: 600px) and (min-width: 400px) {
-
-    html {
-        min-width: 400px;
-    }
+@media (max-width: 600px) {
 
     body {
         font-size: 0.6em;

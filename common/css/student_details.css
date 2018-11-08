@@ -231,7 +231,7 @@ main div img.large-thumbnails {
 }
 
 /***** MEDIA *****/
-@media (max-width: 600px) and (min-width: 400px) {
+@media (max-width: 600px) {
 
     header div#header-left_column {
         width: 50%;
