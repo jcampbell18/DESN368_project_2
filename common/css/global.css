@@ -253,6 +253,18 @@ footer div#horizontal-area section#right-vertical-column {
         font-size: 0.8em;
     }
 
+    nav #right-column {
+        font-size: 0.8em;
+    }
+
+    nav #mid-column {
+        width: 400%;
+    }
+
+    nav div#mid-column ul li {
+        padding: 0 5%;
+    }
+
     footer div#horizontal-area div#left-vertical-column {
         width: 50%;
     }
@@ -282,7 +294,7 @@ footer div#horizontal-area section#right-vertical-column {
     }
 
     nav div#mid-column ul li {
-        padding: 0 5%;
+        padding: 0 2%;
     }
 
     footer input {
